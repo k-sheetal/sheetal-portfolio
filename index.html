@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheetal K – Data Scientist</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f2ed;
+    }
+
+    /* Sticky Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #10283c;
+      z-index: 1000;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      padding: 0 30px;
+    }
+
+    .nav-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px; /* 👈 Add this */
+}
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #facc15;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #deb03bed;
+      padding: 60px;
+      border-radius: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+  padding: 40px 60px 60px;
+}
+
+.hero-text {
+  margin-top: -20px;
+}
+
+    .hero-text h1 {
+      font-size: 28px;
+      font-style: italic;
+      color: #efeeea;
+      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+    }
+
+    .hero-text h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 25px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: #0c2a54;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #d97706;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      border: none;
+    }
+
+    .btn-projects { background-color: #34D399; color: #fff; }
+    .btn-linkedin { background-color: #3B82F6; color: #fff; display: inline-flex; align-items: center; }
+    .btn-linkedin img { width: 18px; margin-right: 8px; }
+    .btn-download { background-color: #FACC15; color: #000; }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img.profile {
+      width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .hero-video-bubble {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: 100px;
+      margin-bottom: 1px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-video-bubble video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .image-gallery img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 0 25px rgba(0, 255, 255, 0.2); }
+
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; padding: 30px 20px; }
+      .hero-text, .hero-image { width: 100%; text-align: center; }
+      .hero-image img.profile { width: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔝 Sticky Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">Sheetal K | Data Scientist </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 🟡 HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Sheetal 👋</h1>
+    <h2>Business Analyst | Data Storyteller | Lifelong Learner | Devourer of Mystery Novels</h2>
+    <p>With a foundation in Computer Science Engineering, an MBA in Business, and a Master’s in Business Analytics from University of North Texas, I bring a unique blend of technical know-how and business insight to the table.</p>
+    <p>I’ve spent over 3 years working with industry leaders like Goldman Sachs and LinkedIn, where I learned how to turn complex data into strategies that make an impact.</p>
+    <p class="quote">"Without data, you're just another person with an opinion." - W. Edwards Deming</p>
+    <p>I aim to make data accessible and actionable for everyone.</p>
+    <p><strong>📞</strong> 1 (903) 421-6633<br><strong>✉️</strong> sheetal3796@gmail.com</p>
+    <div class="btn-group">
+      <a href="#projects" class="btn-projects">Projects</a>
+      <a href="https://www.linkedin.com/in/k-sheetal/" class="btn-linkedin" target="_blank">
+        <img src="images/about/in.webp" alt="LinkedIn Icon" />LinkedIn
+      </a>
+      <a href="images/about/Sheetal_K_CV.pdf" class="btn-download" download target="_blank">Download Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-video-bubble">
+      <video autoplay muted loop playsinline>
+        <source src="images/about/Intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <img src="images/about/1.jpg" alt="Sheetal's Photo" class="profile" />
+    <div class="image-gallery">
+      <img src="images/about/ai1.jpg" alt="AI 1" />
+      <img src="images/about/ai2.jpg" alt="AI 2" />
+      <img src="images/about/ai3.jpg" alt="AI 3" />
+    </div>
+  </div>
+</section>
+
+<!-- 🧠 PROJECTS SECTION -->
+<section id="projects" class="py-5" style="background-color: #10283c;">
+  <div class="container text-center text-white">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-white border border-info rounded-4 shadow-lg h-100">
+          <img src="images/projects/1.jpg" class="card-img-top p-4" alt="ML/AI Engineer Icon" />
+          <div class="card-body"><h5 class="card-title fw-bold">ML/AI Engineer</h5></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-white border border-primary rounded-4 shadow-lg h-100">
+          <img src="images/projects/2.jpg" class="card-img-top p-4" alt="Python Developer Icon" />
+          <div class="card-body"><h5 class="card-title fw-bold">Python Developer</h5></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-dark text-white border border-success rounded-4 shadow-lg h-100">
+          <img src="images/projects/3.jpg" class="card-img-top p-4" alt="MLOps Engineer Icon" />
+          <div class="card-body"><h5 class="card-title fw-bold">MLOps Engineer</h5></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 💡 SKILLS SECTION -->
+<section id="skills" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-5 fw-bold">Skills</h2>
+    <div class="row g-5 justify-content-center">
+      <div class="col-md-6 col-lg-3">
+        <img src="images/skills/1.png" class="mb-3" style="width: 80px;" />
+        <h5 class="fw-bold">Python</h5>
+        <p class="text-muted small">My go-to language for cleaning, modeling, and automating data-driven tasks.</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/skills/2.png" class="mb-3" style="width: 80px;" />
+        <h5 class="fw-bold">Data Visualization</h5>
+        <p class="text-muted small">I turn numbers into insight using Tableau, Power BI, and Python libraries.</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/skills/3.png" class="mb-3" style="width: 80px;" />
+        <h5 class="fw-bold">SQL</h5>
+        <p class="text-muted small">Confident in querying, filtering, and joining datasets to prepare analysis-ready data.</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <img src="images/skills/4.png" class="mb-3" style="width: 80px;" />
+        <h5 class="fw-bold">Data Storytelling</h5>
+        <p class="text-muted small">I translate insights into decisions by presenting data with clarity and purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 📩 CONTACT SECTION -->
+<section id="contact" class="py-5" style="background-color: #10283c;">
+  <div class="container text-center text-white">
+    <h2 class="fw-bold mb-4">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-4 mb-5 flex-wrap">
+      <div class="d-flex align-items-center gap-2">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="Email Icon" />
+        <span>sheetal3796@gmail.com</span>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center gap-5 flex-wrap">
+      <div class="text-center">
+        <a href="https://www.linkedin.com/in/k-sheetal/" target="_blank">
+          <img src="icons/linkedin.png" style="width: 60px; border-radius: 50%; background: #deb03bed; padding: 10px;" />
+        </a>
+        <div class="mt-2">LinkedIn</div>
+      </div>
+      <div class="text-center">
+        <a href="https://github.com/your-username" target="_blank">
+          <img src="icons/github.png" style="width: 60px; border-radius: 50%; background: #deb03bed; padding: 10px;" />
+        </a>
+        <div class="mt-2">GitHub</div>
+      </div>
+      <div class="text-center">
+        <a href="mailto:sheetal3796@gmail.com">
+          <img src="https://img.icons8.com/ios-filled/60/ffffff/email-open.png" style="width: 60px; border-radius: 50%; background: #deb03bed; padding: 10px;" />
+        </a>
+        <div class="mt-2">Email</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
